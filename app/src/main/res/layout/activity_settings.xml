@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:id="@+id/settingsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Settings"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutColorChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewColorChoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Background Color "
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupsColorChoice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rbuttonDefault"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Default ( Dark )" />
+
+            <RadioButton
+                android:id="@+id/rbuttonWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="White" />
+
+            <RadioButton
+                android:id="@+id/rbuttonCreme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Creme" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonReturnFromSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home" />
+</LinearLayout>
